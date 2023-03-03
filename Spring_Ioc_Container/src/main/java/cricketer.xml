@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            
+    <bean id="mycricketer" class="org.jsp.constructor_injector.Cricketer">
+    
+    <constructor-arg name="bid" value="101"></constructor-arg>
+    <constructor-arg name="name" value="Virat"></constructor-arg>
+    <constructor-arg name="price" value="120"></constructor-arg>
+    <constructor-arg name="team" value="India"></constructor-arg>
+    
+    </bean>
+    
+
+</beans>
