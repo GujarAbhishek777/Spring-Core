@@ -17,9 +17,30 @@ public class Pen_Driver {
 		//Pen pen=(Pen)context.getBean("pen");
 		
 //		it will give error
-		Pen pen=(Pen)context.getBean("cow");
+		//Pen pen=(Pen)context.getBean("cow");
 		
-		pen.detatils();
+	//	pen.detatils();
+		
+		
+		
+		
+		
+		
+		Bike bike=(Bike) context.getBean("bike");
+		bike.bikeDetatils();
+		
+		System.out.println("*************************************************************");
+		
+		Student student=(Student)context.getBean("student");
+		
+		student.studentDetails();
+		
+		System.out.println("******************************");
+		student.getPen().detatils();
+		
+		System.out.println("********************************");
+		student.getBike().bikeDetatils();
+		
 	}
 
 }
